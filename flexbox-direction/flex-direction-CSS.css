@@ -1,4 +1,4 @@
-.flex-container{
+.container{
     margin: 0;
     padding: 0;
     display: flex;
@@ -6,7 +6,7 @@
     max-width: 600px;
 }
 
-.flex-item {
+.item {
     background: blue;
     height: 50px;
     width: 50px;
