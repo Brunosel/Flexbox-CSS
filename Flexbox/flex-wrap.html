@@ -26,6 +26,10 @@
         flex-wrap: nowrap;
     }
 
+    .wrap {
+        flex-wrap: wrap;
+    }
+
     .green {
         background-color: green;
     }
@@ -41,12 +45,18 @@
 <body>
     <h1>No wrap</h1>
 
-    <div class="flex-container">
+    <div class="flex-container nowrap">
         <div class="item green">1</div>
         <div class="item blue">2</div>
         <div class="item orange">3</div>
     </div>
 
-    <h2></h2>
+    <h2>Wrap</h2>
+
+    <div class="flex-container wrap">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+    </div>
 </body>
 </html>
