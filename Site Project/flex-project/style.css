@@ -24,7 +24,6 @@ div img {
     margin: auto;
     width: 100%;
     min-width: 320px;
-    padding: 10px 15px;
 }
 
 header {
@@ -248,10 +247,13 @@ header .menu {
 @media(max-width: 992px) {
     .container {
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .presentation {
         flex-direction: column-reverse;
+        max-height: 600px;
+        justify-content: space-around;
     }
 
     .presentation .presentation-text {
@@ -260,6 +262,7 @@ header .menu {
 
     #about {
         flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
     .service-list {
@@ -278,8 +281,14 @@ header .menu {
     }
 
     .plans-list .plan-item {
-        max-width: 90%;
+        max-width: 80%;
         margin: auto;
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .small-image {
+        width: 100%;
+        margin: auto;
     }
 }
