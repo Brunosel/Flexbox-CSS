@@ -23,6 +23,8 @@ div img {
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
 }
 
 header {
@@ -65,7 +67,7 @@ header .menu {
     margin-bottom: 10px;
 }
 
-.presentation-text a {
+.btn {
     background-color: #122a57;
     color: #fff;
     text-align: center;
@@ -109,6 +111,7 @@ header .menu {
 
 .small-image {
     width: 1000px;
+    margin: auto;
 }
 
 .extern-container {
@@ -155,4 +158,128 @@ header .menu {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
+}
+
+#plans {
+    padding-top: 50px;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+#plans h2 {
+    font-size: 32px;
+    color: #122a57;
+}
+
+.plans-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.plan-item {
+    flex: 1;
+    border: 5px solid #122a57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.plan-item .btn {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.plan-item h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.plan-item h3::after {
+    content: "";
+    background-color: #122a57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-item ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.plan-item ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 3px;
+}
+
+.plan-item ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122a57;
+    margin-right: 5px;
+}
+
+.footer {
+    background-color: #122a57;
+    height: 60px;
+}
+
+.footer .footer {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+/* mobile */
+
+@media(max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+    }
+
+    .presentation .presentation-text {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    .service-list {
+        flex-direction: column;
+    }
+
+    .service-item img {
+        width: 50%;
+        margin: auto;
+    }
+     
+    .plans-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .plans-list .plan-item {
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+    }
 }
